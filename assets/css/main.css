@@ -1,6 +1,8 @@
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Pacifico|Source+Sans+Pro:200,400");
 
+
+
 /*
 	Epilogue by TEMPLATED
 	templated.co @templatedco
@@ -16,6 +18,8 @@
 		font-size: 100%;
 		font: inherit;
 		vertical-align: baseline;
+
+		background-image: 
 	}
 
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
@@ -1292,13 +1296,14 @@
 		-ms-flex-direction: column;
 		flex-direction: column;
 		padding: 8em 0 6em 0;
-		background-image: url("../../images/banner.jpg");
+		background-image: url("../../images/banner.mp4");
 		background-size: cover;
 		background-position: center;
 		background-attachment: fixed;
 		text-align: center;
 		position: relative;
 		cursor: default;
+
 	}
 
 		#header input, #header select, #header textarea {
@@ -1540,9 +1545,54 @@
 			margin-bottom: 4em;
 		}
 
+		#banner video {
+			-moz-transform: translateX(50%) translateY(50%);
+			-webkit-transform: translateX(50%) translateY(50%);
+			-ms-transform: translateX(50%) translateY(50%);
+			transform: translateX(50%) translateY(50%);
+			position: absolute;
+			bottom: 50%;
+			right: 50%;
+			width: auto;
+			height: auto;
+			min-width: 100%;
+			min-height: 100%;
+			overflow: hidden;
+		}
+		#banner video {
+				display: none;
+
 		#footer .copyright {
 			font-size: 0.8em;
 		}
+		#banner {
+		display: -ms-flexbox;
+		-ms-flex-pack: center
+		-ms-flex-align: center;
+		-moz-align-items: center;
+		-webkit-align-items: center;
+		-ms-align-items: center;
+		align-items: center;
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;;
+		-moz-justify-content: center;
+		-webkit-justify-content: center;
+		-ms-justify-content: center;
+		justify-content: center;
+		-background-image:  url("../../images/banner.jpg");
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		border-top: 0;
+		min-height: 100vh;
+		height: 100vh !important;
+		width: 100%;
+		position: relative;
+		text-align: center;
+		overflow: hidden;
+	}
 
 		@media screen and (max-width: 736px) {
 
